@@ -8,8 +8,14 @@ import java.util.ArrayList;
 
 public class ListLast
 {
-	public static boolean go( List<Integer> ray)
+
+	public static boolean go(List<Integer> ray)
 	{
-		return true;
+    for (int i = 0; i < ray.size()-1; i++){
+      if(ray.get(i) == ray.get(ray.size() - 1)){
+        return true;
+      }
+    }
+		return false;
 	}
 }
